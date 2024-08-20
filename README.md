@@ -1,7 +1,3 @@
-Thank you for the update. Here is the revised README with the correct model name:
-
----
-
 # YOLO Object Detection Video Annotation
 
 This repository contains code for annotating videos using the YOLOv10 object detection model. The application processes each frame of a video, detects objects, annotates them, and saves both the annotated video and a JSON file with the detection results.
