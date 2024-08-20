@@ -6,7 +6,7 @@ import torch
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # Load the model and move it to the device
-model = YOLO("yolov10n.pt").to(device)
+model = YOLO("model/yolov10n.pt").to(device)
 
 # Open the video file
 video_path = 'video.mp4'  # Replace with the path to your video

@@ -10,7 +10,7 @@ print("Nome da GPU:", torch.cuda.get_device_name(0) if torch.cuda.is_available()
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # Carregue o modelo e mova-o para o dispositivo
-model = YOLO("yolov10n.pt").to(device)
+model = YOLO("model/yolov10n.pt").to(device)
 
 # Execute a inferência
 results = model("teste.jpeg")

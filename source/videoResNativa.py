@@ -7,7 +7,7 @@ import json
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # Load the model and move it to the device
-model = YOLO("yolov10n.pt").to(device)
+model = YOLO("model/best.pt").to(device)
 
 # Open the video file
 video_path = 'test_objects/people.mov'  # Replace with the path to your video
